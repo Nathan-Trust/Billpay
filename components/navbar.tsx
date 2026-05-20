@@ -86,7 +86,7 @@ export function Navbar() {
         {/* Desktop CTA Button */}
         <Link
           href="/download"
-          className="group hidden lg:flex items-center gap-2 rounded-xl bg-[#0B5132] px-6 py-3 text-base font-semibold text-white shadow-md shadow-emerald-900/20 hover:bg-[#063D24] hover:shadow-lg transition-all"
+          className="hidden lg:flex items-center gap-2 rounded-lg bg-[#0B5132] px-6 py-3 text-base font-semibold text-white hover:bg-[#063D24] transition-colors"
         >
           Download App
           <svg
@@ -185,7 +185,7 @@ export function Navbar() {
           </button>
           <Link
             href="/download"
-            className="flex items-center justify-center gap-2 rounded-xl bg-[#0B5132] px-6 py-3 text-base font-semibold text-white shadow-md shadow-emerald-900/20 hover:bg-[#063D24] transition-all mt-2"
+            className="flex items-center justify-center gap-2 rounded-lg bg-[#0B5132] px-6 py-3 text-base font-semibold text-white hover:bg-[#063D24] transition-colors mt-2"
           >
             Download App
             <svg

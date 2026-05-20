@@ -51,34 +51,18 @@ const testimonials = [
   },
 ];
 
-function initialsOf(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .filter(Boolean)
-    .slice(0, 2)
-    .join("")
-    .toUpperCase();
-}
-
 export function TestimonialsSection() {
   return (
-    <section
-      id="testimonials"
-      className="w-full bg-gradient-to-b from-white via-emerald-50/40 to-white px-8 py-24"
-    >
-      <div className="mx-auto max-w-[1200px]">
-        {/* Section Title */}
-        <div className="mb-14 text-center">
-          <span className="mb-4 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#0B5132]">
-            What people are saying
-          </span>
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
-            Loved by users across Nigeria
+    <section id="testimonials" className="w-full bg-white px-8 py-20">
+      <div className="mx-auto max-w-[1440px]">
+        <div className="mb-16 flex items-center justify-center gap-8">
+          <div className="h-px w-24 bg-gray-300"></div>
+          <h2 className="text-center text-3xl font-bold text-gray-900">
+            TESTIMONIALS
           </h2>
+          <div className="h-px w-24 bg-gray-300"></div>
         </div>
 
-        {/* Testimonials Carousel */}
         <Carousel
           opts={{
             align: "start",
@@ -92,8 +76,7 @@ export function TestimonialsSection() {
                 key={testimonial.id}
                 className="pl-4 md:basis-1/2 lg:basis-1/3"
               >
-                <div className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-7 transition-all hover:-translate-y-1 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5">
-                  {/* Quote Icon */}
+                <div className="flex h-full flex-col overflow-hidden rounded-2xl border-2 border-[#0B5132] bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
                   <div className="mb-4 text-[#0B5132]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -106,24 +89,17 @@ export function TestimonialsSection() {
                     </svg>
                   </div>
 
-                  {/* Quote Text */}
-                  <p className="mb-6 flex-grow leading-relaxed text-gray-700">
+                  <p className="mb-6 flex-grow text-gray-700 leading-relaxed">
                     &ldquo;{testimonial.quote}&rdquo;
                   </p>
 
-                  {/* Author Info */}
-                  <div className="flex items-center gap-3 border-t border-gray-100 pt-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-sm font-bold text-[#0B5132]">
-                      {initialsOf(testimonial.name)}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        {testimonial.location}, Nigeria
-                      </p>
-                    </div>
+                  <div className="border-t border-gray-100 pt-4">
+                    <p className="font-bold text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-[#0B5132]">
+                      {testimonial.location}, Nigeria
+                    </p>
                   </div>
                 </div>
               </CarouselItem>
