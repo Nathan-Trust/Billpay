@@ -12,7 +12,7 @@ export default function PrivacyPage() {
           {/* Back Link */}
           <Link
             href="/"
-            className="mb-8 inline-flex items-center gap-2 text-[#0D9488] hover:text-[#0F766E] transition-colors"
+            className="mb-8 inline-flex items-center gap-2 text-[#0B5132] hover:text-[#063D24] transition-colors"
           >
             <svg
               width="20"
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="mb-8 text-lg text-gray-600">
-            Effective Date: December 16, 2025
+            Effective Date: May 20, 2026
           </p>
 
           <div className="prose prose-lg max-w-none text-gray-600">

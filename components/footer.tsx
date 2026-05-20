@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-[#596679] px-8 py-16">
+    <footer className="w-full bg-[#0a2218] px-8 py-16">
       <div className="mx-auto max-w-[1440px]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {/* Left Column - Logo and Description */}

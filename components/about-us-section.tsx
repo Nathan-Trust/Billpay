@@ -17,9 +17,14 @@ export function AboutUsSection() {
 
         {/* Right side - Content */}
         <div className="flex flex-col">
-          <h2 className="mb-6 text-4xl font-bold text-gray-900">ABOUT US</h2>
+          <span className="mb-4 inline-block w-fit rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#0B5132]">
+            About us
+          </span>
+          <h2 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+            Staying connected, made simple
+          </h2>
 
-          <div className="mb-8 space-y-4 text-lg text-gray-600">
+          <div className="mb-8 space-y-4 text-lg leading-relaxed text-gray-600">
             <p>
               We believe staying connected should be simple. That&apos;s why we
               created Billpay — a utility app that makes purchasing international
@@ -38,7 +43,7 @@ export function AboutUsSection() {
           </div>
 
           {/* CTA Button */}
-          <button className="flex w-fit items-center gap-2 rounded-lg bg-[#0D9488] px-8 py-4 text-base font-semibold text-white hover:bg-[#0F766E] transition-colors">
+          <button className="group flex w-fit items-center gap-2 rounded-xl bg-[#0B5132] px-7 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-900/20 transition-all hover:-translate-y-0.5 hover:bg-[#063D24] hover:shadow-xl">
             Download App
             <svg
               width="20"
@@ -46,6 +51,7 @@ export function AboutUsSection() {
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="transition-transform group-hover:translate-x-1"
             >
               <path
                 d="M4.16666 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15"

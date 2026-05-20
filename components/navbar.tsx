@@ -59,25 +59,25 @@ export function Navbar() {
         <div className="hidden lg:flex items-center gap-8">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors"
+            className="text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors"
+            className="text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors"
           >
             Why Choose Us?
           </button>
           <button
             onClick={() => scrollToSection("how-it-works")}
-            className="text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors"
+            className="text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors"
           >
             How It Works
           </button>
           <button
             onClick={() => scrollToSection("testimonials")}
-            className="text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors"
+            className="text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors"
           >
             Testimonials
           </button>
@@ -86,7 +86,7 @@ export function Navbar() {
         {/* Desktop CTA Button */}
         <Link
           href="/download"
-          className="hidden lg:flex items-center gap-2 rounded-lg bg-[#0D9488] px-6 py-3 text-base font-semibold text-white hover:bg-[#0F766E] transition-colors"
+          className="group hidden lg:flex items-center gap-2 rounded-xl bg-[#0B5132] px-6 py-3 text-base font-semibold text-white shadow-md shadow-emerald-900/20 hover:bg-[#063D24] hover:shadow-lg transition-all"
         >
           Download App
           <svg
@@ -109,7 +109,7 @@ export function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden z-50 p-2 text-gray-900 hover:text-[#0D9488] transition-colors"
+          className="lg:hidden z-50 p-2 text-gray-900 hover:text-[#0B5132] transition-colors"
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
@@ -161,31 +161,31 @@ export function Navbar() {
         <div className="px-4 py-6 flex flex-col gap-4">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-left text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors py-2"
+            className="text-left text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors py-2"
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-left text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors py-2"
+            className="text-left text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors py-2"
           >
             Why Choose Us?
           </button>
           <button
             onClick={() => scrollToSection("how-it-works")}
-            className="text-left text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors py-2"
+            className="text-left text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors py-2"
           >
             How It Works
           </button>
           <button
             onClick={() => scrollToSection("testimonials")}
-            className="text-left text-base font-medium text-gray-900 hover:text-[#0D9488] transition-colors py-2"
+            className="text-left text-base font-medium text-gray-900 hover:text-[#0B5132] transition-colors py-2"
           >
             Testimonials
           </button>
           <Link
             href="/download"
-            className="flex items-center justify-center gap-2 rounded-lg bg-[#0D9488] px-6 py-3 text-base font-semibold text-white hover:bg-[#0F766E] transition-colors mt-2"
+            className="flex items-center justify-center gap-2 rounded-xl bg-[#0B5132] px-6 py-3 text-base font-semibold text-white shadow-md shadow-emerald-900/20 hover:bg-[#063D24] transition-all mt-2"
           >
             Download App
             <svg
